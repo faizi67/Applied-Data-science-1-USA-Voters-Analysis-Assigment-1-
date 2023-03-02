@@ -50,3 +50,22 @@ df.voter_category.value_counts().plot(kind="bar")
 plt.title("Distribution of Voters")
 plt.ylabel("")
 plt.show()
+
+
+# # Visualization 3
+
+# In[25]:
+
+
+plt.figure(figsize=(12, 4))
+plt.subplot(121)
+sns.kdeplot(df.weight)
+plt.title("Density of Weight")
+
+plt.subplot(122)
+sns.kdeplot(df.ppage)
+plt.title("Density of PPage")
+plt.show()
+
+
+# In[ ]:
